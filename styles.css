@@ -1,0 +1,85 @@
+
+  .menu ul{
+  list-style-type: none;
+  margin: 2px;
+  padding: 3px;
+  overflow: hidden;
+  background-color: darkred;
+}
+.menu *{
+  background-color: darkred;
+}
+.menu li{
+  float: left;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+p {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: left;
+}
+*{
+  background-color: gray;
+}
+.left-align{
+  text-align: left;
+}
+ol {
+  list-style-type: lower-roman;
+}
+ .links {
+  text-align: center;
+  padding: 100px;
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+* {
+  margin: 3px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited{
+  color: purple;
+}
+a:hover{
+  color: aqua;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+a:visited:hover {
+  color: orange;
+}
+a:visited:active {
+  color: red;
+}
