@@ -1,85 +1,109 @@
-
-  .menu ul{
-  list-style-type: none;
-  margin: 2px;
-  padding: 3px;
-  overflow: hidden;
-  background-color: darkred;
-}
-.menu *{
-  background-color: darkred;
-}
-.menu li{
-  float: left;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.menu-object {
+  color: #FFF;
+  background-color: red;
+  padding: 20px 10px;
+  /* display: flex;
+  justify-content: center; */
 }
+.menu {
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+  display: flex;
+ justify-content: space-between;
 }
-p {
-  text-align: center;
+.menu a {
+  background-color: red;
 }
-h1 {
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+.title {
+  /* justify-content: center; */
   text-align: center;
 }
 h2 {
-  text-align: left;
+  text-align: center;
 }
-*{
-  background-color: gray;
+.about-me {
+  float: left;
+margin-left: 15%;
+  width: 65%;
+  height: 40%;
+
+}
+.image{
+  margin-left: 8%;
+  margin-right: 7.5%;
+  width: 45%;
+  height: 30%;
+  float: left;
 }
 .left-align{
-  text-align: left;
+  clear: both;
 }
-ol {
-  list-style-type: lower-roman;
+.flex-left h2 {
+  flex: left;
 }
- .links {
+.flex-left li{
+  flex: left;
+}
+p{
   text-align: center;
-  padding: 100px;
-  color: #FFF;
-  background-color: #5995DA;
-  font-weight: bold;
-  padding: 20px;
+}
+ul{
   text-align: center;
-  border: 2px solid #5D6063;
-  border-radius: 5px;
+}
+ol{
+  text-align: center;
+}
+.not-about-me{
+  clear: both;
+}
+h4{
+  text-align: center;
+}
+.links {
+  clear:
+  text-align: center;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+    width: 90%;
 
-  width: 200px;
-  margin: 20px auto;
+  }
 }
-* {
-  margin: 3px;
-  padding: 5px;
-  box-sizing: border-box;
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    width: 90%;
+    background-color: #F5CF8E; /* Yellow */
+  }
+  .image{
+    width: 33%;
+    height:25%;
+  }
 }
-a:link {
-  color: blue;
-  text-decoration: none;
-}
-a:visited{
-  color: purple;
-}
-a:hover{
-  color: aqua;
-  text-decoration: underline;
-}
-a:active {
-  color: red;
-}
-a:visited:hover {
-  color: orange;
-}
-a:visited:active {
-  color: red;
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: grey; /* Blue */
+  }
+
+  .image{
+    width: 25%;
+    height: 15%;
+    margin-right: 3%;
+  }
 }
